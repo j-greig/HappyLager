@@ -40,7 +40,7 @@ Now point your browser at http://happylager.test. You should see the Happy Lager
 
 ## Logging in
 
-The Craft Control Panel is located at http://happylager.dev/admin. You can log in with the following credentials:
+The Craft Control Panel is located at http://happylager.test/admin. You can log in with the following credentials:
 
 * Username: `admin`
 * Password: `password`
