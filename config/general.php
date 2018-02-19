@@ -23,6 +23,9 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        // Hint to our templates if we're viewing through Neutrino/Webpack dev-server
+        'devServerProxy' => (bool) $_SERVER['HTTP_X_DEV_SERVER_PROXY'],
     ],
 
     // Dev environment settings

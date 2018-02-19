@@ -8,9 +8,12 @@ module.exports = {
     '@neutrinojs/airbnb-base',
     neutrino => neutrino.use('@neutrinojs/web', {
       html: false,
-      publicPath: `/${basename(neutrino.options.output)}/`,
+      publicPath: `/assets/build/`,
       devServer: {
         proxy: 'http://happylager.test'
+      },
+      image: {
+        limit: 1
       },
       style: {
         test: /\.s?css$/,

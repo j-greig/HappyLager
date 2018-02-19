@@ -57,12 +57,20 @@
 		<meta charset="utf-8">
 		<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/fonts/stylesheet.css">
-		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/happylager.css">
+
+    {% if not craft.app.config.general.devServerProxy %}
+      <link rel="stylesheet" href="{{ url(rev('index.css')) }}">
+    {% endif %}
+
 	{% endblock %}
 </head>
 <body {% if bodyClass is defined %}class="{{ bodyClass }}"{% endif %}>
 	{% block body %}{% endblock %}
 	{% block foot %}{% endblock %}
+
+  {% if not craft.app.config.general.devServerProxy %}
+    <script src="{{ url(rev('runtime.js')) }}"></script>
+  {% endif %}
+  <script src="{{ url(rev('index.js')) }}"></script>
 </body>
 </html>
