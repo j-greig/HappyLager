@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.38)
 # Database: happy_lager_local
-# Generation Time: 2018-02-19 02:17:30 +0000
+# Generation Time: 2018-02-19 16:01:10 +0000
 # ************************************************************
 
 
@@ -1508,7 +1508,7 @@ VALUES
 	(193,'craft\\elements\\MatrixBlock','2015-02-10 21:47:22','2015-02-10 21:47:22','65bf26e9-50b3-4580-88a4-7a622077d8fb'),
 	(194,'craft\\elements\\Asset','2015-02-10 23:15:32','2018-02-16 22:31:14','e4360fb7-190d-42c5-bde0-e01c03bd127c'),
 	(195,'craft\\elements\\Asset','2015-02-10 23:15:35','2018-02-16 22:31:23','da21546b-da53-49c7-8821-2685c67df6b4'),
-	(196,'craft\\elements\\Asset','2015-02-10 23:15:38','2018-02-16 22:31:54','57038148-5c46-43e2-9c5b-9760e04375f2'),
+	(196,'craft\\elements\\Asset','2015-02-10 23:15:38','2018-02-19 15:47:11','57038148-5c46-43e2-9c5b-9760e04375f2'),
 	(197,'craft\\elements\\Entry','2016-06-03 17:38:06','2016-06-03 17:38:06','d45c4454-78e5-415c-8e08-700061feb9b4'),
 	(198,'craft\\elements\\Asset','2018-02-16 22:32:04','2018-02-16 22:32:04','2d9fb3d5-a903-4ef4-81f3-9eb72e49e728');
 
@@ -2376,7 +2376,8 @@ LOCK TABLES `plugins` WRITE;
 
 INSERT INTO `plugins` (`id`, `handle`, `version`, `schemaVersion`, `licenseKey`, `licenseKeyStatus`, `enabled`, `settings`, `installDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'redactor','1.0.1','1.0.0',NULL,'unknown',1,NULL,'2018-02-16 22:20:38','2018-02-16 22:20:38','2018-02-19 02:03:48','2466ee8f-7fab-45ad-b6ec-10d86c18543b');
+	(1,'redactor','1.0.1','1.0.0',NULL,'unknown',1,NULL,'2018-02-16 22:20:38','2018-02-16 22:20:38','2018-02-19 02:03:48','2466ee8f-7fab-45ad-b6ec-10d86c18543b'),
+	(2,'assetrev','6.0.0','1.0.0',NULL,'unknown',1,NULL,'2018-02-19 15:09:18','2018-02-19 15:09:18','2018-02-19 15:09:18','e72e2324-ea03-4613-b2b1-4d3f47187b0e');
 
 /*!40000 ALTER TABLE `plugins` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -3693,7 +3694,8 @@ LOCK TABLES `sessions` WRITE;
 
 INSERT INTO `sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,1,'MilsqukNoPZmx_wYUmoDRQTn2znlSvs01BIkT_EUO_sogQTNr-ZsZn_VDSsp7F0Nb4SUYni000KaEGzuA8iLQ9seHna9w0eNXKMp','2018-02-19 01:58:01','2018-02-19 02:17:19','44d2327b-4d62-44e6-8044-854aeafd0d02');
+	(1,1,'MilsqukNoPZmx_wYUmoDRQTn2znlSvs01BIkT_EUO_sogQTNr-ZsZn_VDSsp7F0Nb4SUYni000KaEGzuA8iLQ9seHna9w0eNXKMp','2018-02-19 01:58:01','2018-02-19 02:43:21','44d2327b-4d62-44e6-8044-854aeafd0d02'),
+	(2,1,'SwSrlt4_7ab4RKbKILTizSw2qmIDSgOJxbmpDHTEMcYuK-gcTk8A32JMMLD_KALiVCFuA4ckzx90kajQbzjmgywYgCltSy80ePpa','2018-02-19 15:09:08','2018-02-19 15:49:50','1c7ff03c-c074-42a9-a0bc-58625e6684c2');
 
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -4203,7 +4205,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `username`, `photoId`, `firstName`, `lastName`, `email`, `password`, `admin`, `client`, `locked`, `suspended`, `pending`, `lastLoginDate`, `lastLoginAttemptIp`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'admin',NULL,NULL,NULL,'admin@happylager.dev','$2a$13$5j8bSRoKQZipjtIg6FXWR.kGRR3UfCL.QeMIt2yTRH1.hCNHLQKtq',1,0,0,0,0,'2018-02-19 01:58:01','::1',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,'2016-08-22 18:42:37','2018-02-19 01:58:01','953aedcd-73c8-4677-b0c5-4241e8fbb14c');
+	(1,'admin',NULL,NULL,NULL,'admin@happylager.dev','$2a$13$5j8bSRoKQZipjtIg6FXWR.kGRR3UfCL.QeMIt2yTRH1.hCNHLQKtq',1,0,0,0,0,'2018-02-19 15:09:08','::1',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,'2016-08-22 18:42:37','2018-02-19 15:09:08','953aedcd-73c8-4677-b0c5-4241e8fbb14c');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -4280,7 +4282,7 @@ INSERT INTO `volumes` (`id`, `name`, `handle`, `type`, `hasUrls`, `url`, `settin
 VALUES
 	(1,'Site Assets','siteAssets','craft\\volumes\\Local',1,'@web/assets/site','{\"path\":\"@webroot/assets/site\"}',1,194,'2014-07-30 22:43:56','2018-02-16 22:31:14','0193dc64-5499-4e28-95dd-f8f603154851'),
 	(2,'Company Logos','companyLogos','craft\\volumes\\Local',1,'@web/assets/site/logos','{\"path\":\"@webroot/assets/site/logos\"}',2,195,'2014-10-07 03:38:14','2018-02-16 22:31:23','7d6a9bef-727c-4a0c-9791-4f423956de69'),
-	(3,'Service Icons','serviceIcons','craft\\volumes\\Local',1,'@web/assets/site/images/service-icons','{\"path\":\"@webroot/assets/site/images/service-icons\"}',3,196,'2014-12-03 20:02:16','2018-02-16 22:31:54','3fc34ff2-8da7-4a35-8147-f0a2e01392b9'),
+	(3,'Service Icons','serviceIcons','craft\\volumes\\Local',1,'@web/assets/site/service-icons','{\"path\":\"@webroot/assets/site/service-icons\"}',3,196,'2014-12-03 20:02:16','2018-02-19 15:47:11','3fc34ff2-8da7-4a35-8147-f0a2e01392b9'),
 	(4,'User Photos','userPhotos','craft\\volumes\\Local',0,NULL,'{\"path\":\"@storage/userphotos\"}',4,198,'2018-02-16 22:04:25','2018-02-16 22:32:04','1f0ea10d-2be0-4638-88da-105d232f4787');
 
 /*!40000 ALTER TABLE `volumes` ENABLE KEYS */;
