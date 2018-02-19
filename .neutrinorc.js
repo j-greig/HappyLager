@@ -15,6 +15,9 @@ module.exports = {
       image: {
         limit: 1
       },
+      minify: {
+        image: true
+      },
       style: {
         test: /\.s?css$/,
         loaders: [
