@@ -23,7 +23,8 @@
     "craftcms/cms": "^3.0.0-RC1",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
-    "craftcms/redactor": "^1.0"
+    "craftcms/redactor": "^1.0",
+    "verbb/feed-me": "3.0.0-beta.17"
   },
   "autoload": {
     "psr-4": {
