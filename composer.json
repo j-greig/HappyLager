@@ -24,7 +24,10 @@
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
     "craftcms/redactor": "^1.0",
-    "verbb/feed-me": "3.0.0-beta.17"
+    "verbb/feed-me": "3.0.0-beta.17",
+    "mmikkel/cp-field-inspect": "1.0.4",
+    "verbb/feed-me-pro": "3.0.4",
+    "barrelstrength/sprout-import": "v1.0.0-beta.14"
   },
   "autoload": {
     "psr-4": {
