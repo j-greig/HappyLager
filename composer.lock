@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afa6137a432108adb6a1ce25f45394b7",
+    "content-hash": "6cb58ba4d6f5644c5c89cbfb9fe6e6d3",
     "packages": [
         {
             "name": "barrelstrength/sprout-base",
@@ -2040,6 +2040,59 @@
             "time": "2018-01-13T05:27:58+00:00"
         },
         {
+            "name": "mdxdave/time-ago",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MDXDave/time-ago.git",
+                "reference": "42a269674533679eea184a87321d8c212c913b00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MDXDave/time-ago/zipball/42a269674533679eea184a87321d8c212c913b00",
+                "reference": "42a269674533679eea184a87321d8c212c913b00",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.23",
+                "nesbot/carbon": "^1.22"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "TimeAgo",
+                "handle": "time-ago",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/mdxdave/time-ago/master/CHANGELOG.md",
+                "class": "mdxdave\\timeago\\TimeAgo"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdxdave\\timeago\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "MDXDave",
+                    "homepage": "https://mdxdave.de"
+                }
+            ],
+            "description": "Displays time ago for timestamp",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "timeago"
+            ],
+            "time": "2017-08-01T00:09:03+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.4.1",
             "source": {
@@ -2184,6 +2237,46 @@
                 "time"
             ],
             "time": "2018-09-20T19:36:25+00:00"
+        },
+        {
+            "name": "nystudio107/craft-scripts",
+            "version": "1.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-scripts.git",
+                "reference": "a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-scripts/zipball/a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545",
+                "reference": "a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Shell scripts to manage database backups, asset backups, file permissions, asset syncing, cache clearing, and database syncing between Craft CMS environments",
+            "keywords": [
+                "Craft",
+                "asset-backup",
+                "assets-sync",
+                "clear-caches",
+                "craftcms",
+                "database-backup",
+                "database-sync",
+                "scripts",
+                "set-permissions",
+                "shell"
+            ],
+            "time": "2018-08-20T17:49:22+00:00"
         },
         {
             "name": "paragonie/random_compat",
