@@ -6,9 +6,8 @@
 		<meta charset="utf-8">
 		<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-			<link rel="stylesheet" href="assets/css/_tachyons.min.css">
-			<link rel="stylesheet" href="assets/css/extras.css">
+		<link rel="stylesheet" href="/assets/css/_tachyons.min.css">
+		<link rel="stylesheet" href="/assets/css/extras.css">
 	{% endblock %}
 </head>
 <body class="w-100 h-100 ma3 pa0">
@@ -17,13 +16,32 @@
   orderBy: 'postDate desc'
 }).all() %}
 
-<section id="dot-all-tweets" class="sans-serif clearfloat">
+<section id="dot-all-tweets" class="sans-serif grid">
   {% for entry in dotAllTweets %}
-  <div class="bg-white ma3 pa3 br3 fl mw5_5">
+  <div class="grid-item bg-white ma3 pa3 br3 mw5_5 fl">
     <p class="mt0 lh-copy"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
     <p class="lh-copy ">{{ entry.tweetText }}</p>
     <p class="mb0 f7"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
   </div>
   {% endfor %}
 </section>
+
+<script type="text/javascript" src="/assets/js/masonry.pkgd.min.js"></script>
+<script>
+// self executing function here
+(function() {
+	var elem = document.querySelector('.grid');
+	var msnry = new Masonry( elem, {
+	  // options
+	  itemSelector: '.grid-item',
+	  columnWidth: 330
+	});
+
+	// element argument can be a selector string
+	//   for an individual element
+	var msnry = new Masonry( '.grid', {
+	  // options
+});
+})();
+</script>
 </body>

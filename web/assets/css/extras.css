@@ -2,5 +2,9 @@ body {
   background-color: #1DCAFF;
 }
 .mw5_5 {
-  max-width: 350px;
+  /* max-width: 350px; */
+}
+
+.grid-item {
+  width: 330px;
 }
