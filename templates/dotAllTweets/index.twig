@@ -22,7 +22,7 @@
   <div class="bg-white ma3 pa3 br3 fl mw5_5">
     <p class="mt0 lh-copy"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
     <p class="lh-copy ">{{ entry.tweetText }}</p>
-    <p class="mb0 f7"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate|date("d M, Y") }}</a></p>
+    <p class="mb0 f7"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
   </div>
   {% endfor %}
 </section>
