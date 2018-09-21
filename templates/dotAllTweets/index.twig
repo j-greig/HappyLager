@@ -6,23 +6,23 @@
 		<meta charset="utf-8">
 		<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 			<link rel="stylesheet" href="assets/css/_tachyons.min.css">
 			<link rel="stylesheet" href="assets/css/extras.css">
 	{% endblock %}
 </head>
-<body class="w-100 h-100">
+<body class="w-100 h-100 ma3 pa0">
 {% set dotAllTweets = craft.entries({
   section: 'dotAllTweets',
   orderBy: 'postDate desc'
 }).all() %}
 
-<section id="dot-all-tweets" class="w-100 h-100 sans-serif">
-  {% for tweet in dotAllTweets %}
-  <div class="bg-white ba mh4 pa5 w-50">
-    <p>{{ tweet.tweetText }}</p>
-    <p>{{ tweet.tweetUsername }}</p>
-    <p>{{ tweet.postDate|date("d M, Y") }}</p>
+<section id="dot-all-tweets" class="sans-serif clearfloat">
+  {% for entry in dotAllTweets %}
+  <div class="bg-white ma3 pa3 br3 fl mw5_5">
+    <p class="mt0 lh-copy"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
+    <p class="lh-copy ">{{ entry.tweetText }}</p>
+    <p class="mb0 f7"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate|date("d M, Y") }}</a></p>
   </div>
   {% endfor %}
 </section>
