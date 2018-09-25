@@ -1,0 +1,15 @@
+{% set client = {
+    base_uri : 'https://api.airtable.com/v0/app6c5PGL8ECac8DI/2018?maxRecords=999&view=Cleaned',
+    timeout : 99
+} %}
+
+{% set options = {
+    headers: {
+      'Authorization' : 'Bearer keyhIK1RE4i5B0qJ3'
+    }
+} %}
+
+{# The 'false' parameter at the end enables a string request (instead of an array)  #}
+{% set request = fetch(client, 'GET', '', options, false) %}
+
+{{ request.body }}
