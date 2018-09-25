@@ -11,18 +11,18 @@
 		<link rel="stylesheet" href="/assets/css/extras.css">
 	{% endblock %}
 </head>
-<body class="w-100 h-100 ma3 pa0">
+<body class="w-100 h-100 pa0">
 {% set dotAllTweets = craft.entries({
   section: 'dotAllTweets',
   orderBy: 'postDate desc'
 }).all() %}
 
-<section id="dot-all-tweets" class="sans-serif grid">
+<section id="dot-all-tweets" class="ma3 sans-serif grid">
   {% for entry in dotAllTweets %}
   <div class="grid-item bg-white ma3 pa3 br3 mw5_5 fl">
-    <p class="mt0 lh-copy"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
-    <p class="lh-copy ">{{ entry.tweetText }}</p>
-    <p class="mb0 f7"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
+    <p class="mt0 lh-copy f4"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
+    <p class="lh-copy f4">{{ entry.tweetText }}</p>
+    <p class="mb0 f6"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
   </div>
   {% endfor %}
 </section>
