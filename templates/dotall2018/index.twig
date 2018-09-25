@@ -19,10 +19,10 @@
 
 <section id="dot-all-tweets" class="ma3 sans-serif grid">
   {% for entry in dotAllTweets %}
-  <div class="grid-item bg-white ma3 pa3 br3 mw5_5 fl">
-    <p class="mt0 lh-copy f4"><strong>{{ entry.tweetFullName }}</strong>&nbsp; <small class="gray">@{{ entry.tweetUsername }}</small></p>
-    <p class="lh-copy f4">{{ entry.tweetText }}</p>
-    <p class="mb0 f6"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
+  <div class="grid-item bg-white ma3 pa3 br3 fl">
+    <p class="mv0 lh-copy f3"><strong>{{ entry.tweetFullName }}</strong><small class="gray">&nbsp; @{{ entry.tweetUsername }}</small></p>
+    <p class="mt2 mb0 lh-copy f3">{{ entry.tweetText }}</p>
+    <p class="mb0 f5"><a class="gray link" href="{{ entry.tweetUrl }}">{{ entry.postDate.getTimestamp()|timeAgo }}</a></p>
   </div>
   {% endfor %}
 </section>
@@ -35,7 +35,7 @@
 	var msnry = new Masonry( elem, {
 	  // options
 	  itemSelector: '.grid-item',
-	  columnWidth: 330
+	  columnWidth: 440
 	});
 
 	// element argument can be a selector string
