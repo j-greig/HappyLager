@@ -32,6 +32,9 @@ return [
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+
+        // Don't log me out for 5 days (for demo purposes)
+        'rememberedUserSessionDuration' => 432000
     ],
 
     // Staging environment settings
