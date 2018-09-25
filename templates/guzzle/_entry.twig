@@ -11,8 +11,12 @@
     }
 } %}
 
-{# The final 'false' parameter enables a string request (instead of an array)  #}
-{% set request = fetch(client, 'GET', '', options, false) %}
+{% cache for 1 minute %}
 
-{# Print out the API response #}
-{{ request.body }}
+  {# The final 'false' parameter enables a string request (instead of an array)  #}
+  {% set request = fetch(client, 'GET', '', options, false) %}
+
+  {# Print out the API response #}
+  {{ request.body }}
+
+{% endcache %}
