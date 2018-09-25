@@ -30,7 +30,8 @@
     "barrelstrength/sprout-import": "v1.0.0-beta.14",
     "nystudio107/craft-scripts": "^1.2",
     "mdxdave/time-ago": "^1.0",
-    "lukeyouell/craft-fetch": "^1.2"
+    "lukeyouell/craft-fetch": "^1.2",
+    "mmikkel/incognito-field": "1.0.0"
   },
   "autoload": {
     "psr-4": {
