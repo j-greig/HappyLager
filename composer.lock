@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cb58ba4d6f5644c5c89cbfb9fe6e6d3",
+    "content-hash": "eae372a79f64f191856b24fc84139904",
     "packages": [
         {
             "name": "barrelstrength/sprout-base",
@@ -2038,6 +2038,59 @@
                 "single sign on"
             ],
             "time": "2018-01-13T05:27:58+00:00"
+        },
+        {
+            "name": "lukeyouell/craft-fetch",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukeyouell/craft-fetch.git",
+                "reference": "12f6f567906c3cb052d3332a4fafcd48f9f10da2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukeyouell/craft-fetch/zipball/12f6f567906c3cb052d3332a4fafcd48f9f10da2",
+                "reference": "12f6f567906c3cb052d3332a4fafcd48f9f10da2",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Fetch",
+                "handle": "fetch",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/lukeyouell/craft-fetch/v1/CHANGELOG.md",
+                "class": "lukeyouell\\fetch\\Fetch"
+            },
+            "autoload": {
+                "psr-4": {
+                    "lukeyouell\\fetch\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Youell",
+                    "homepage": "https://github.com/lukeyouell"
+                }
+            ],
+            "description": "Utilise the Guzzle HTTP client from within your Craft templates.",
+            "keywords": [
+                "Craft",
+                "Guzzle",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "fetch"
+            ],
+            "time": "2018-08-02T08:17:08+00:00"
         },
         {
             "name": "mdxdave/time-ago",

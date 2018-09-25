@@ -29,7 +29,8 @@
     "verbb/feed-me-pro": "3.0.4",
     "barrelstrength/sprout-import": "v1.0.0-beta.14",
     "nystudio107/craft-scripts": "^1.2",
-    "mdxdave/time-ago": "^1.0"
+    "mdxdave/time-ago": "^1.0",
+    "lukeyouell/craft-fetch": "^1.2"
   },
   "autoload": {
     "psr-4": {
