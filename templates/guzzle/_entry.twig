@@ -1,0 +1,18 @@
+{# Get the URL from our Guzzle entry #}
+{% set client = {
+    base_uri : entry.guzzleUrl,
+    timeout : 99
+} %}
+
+{# Airtable API key #}
+{% set options = {
+    headers: {
+      'Authorization' : 'Bearer keyhIK1RE4i5B0qJ3'
+    }
+} %}
+
+{# The final 'false' parameter enables a string request (instead of an array)  #}
+{% set request = fetch(client, 'GET', '', options, false) %}
+
+{# Print out the API response #}
+{{ request.body }}
